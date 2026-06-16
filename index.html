@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analyst Portfolio | Customizable Template</title>
+    <meta
+      name="description"
+      content="A sleek, modern, customizable one-page portfolio for Excel, Power BI and SQL data analysts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =====================================================
+       EASY CUSTOMIZATION GUIDE
+       1. Change your name, title, social links and email below.
+       2. Change projects/case studies in js/data.js only.
+       3. Change brand color in css/style.css under :root --brand.
+       4. Replace images inside assets/images with your own.
+       ===================================================== -->
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="site-header" id="top">
+      <a
+        class="brand"
+        href="#top"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      >
+        <span class="brand-mark">DA</span>
+        <span class="brand-line"></span>
+        <span class="brand-text">Portfolio</span>
+      </a>
+
+      <button
+        class="mobile-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        aria-label="Toggle dark and light mode"
+        title="Toggle theme"
+      >
+        <span class="sun">☀</span>
+        <span class="moon">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- ===================== HERO SECTION ===================== -->
+      <section class="hero section-pad">
+        <canvas id="particleCanvas" aria-hidden="true"></canvas>
+        <div class="hero-glow"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Data Analyst Portfolio</p>
+            <h1>
+              Turning the Noise
+              <br />
+              of Data into the <em>Signal</em>
+              <br />
+              of Growth
+            </h1>
+            <p class="hero-text">
+              I build Excel, Power BI and SQL analytics solutions that help
+              teams understand performance, find opportunities and act with
+              confidence.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"
+                >View Projects <span>↓</span></a
+              >
+              <a href="#contact" class="btn btn-ghost">Hire Me</a>
+            </div>
+            <div class="hero-stats" aria-label="Portfolio stats">
+              <div><strong>24+</strong><span>Dashboards</span></div>
+              <div><strong>120k+</strong><span>Rows Cleaned</span></div>
+              <div><strong>35%</strong><span>Avg. Insight Lift</span></div>
+            </div>
+          </div>
+
+          <aside class="hero-orbit reveal" aria-label="Analytics preview cards">
+            <div class="orbit-card card-a">
+              <small>Total Revenue</small>
+              <strong>$2.41M</strong>
+              <span>▲ 18.4% vs last month</span>
+              <div class="mini-line">
+                <svg viewBox="0 0 220 60">
+                  <polyline
+                    class="trend-line"
+                    points="10,50 50,40 80,20 120,28 160,10 210,18"
+                    fill="none"
+                    stroke="#00d9ff"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit-card card-b">
+              <small>Sales Quality</small>
+              <strong>94.2k</strong>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="orbit-card card-c">
+              <small>Segments</small>
+              <div class="ring"><span>63%</span></div>
+            </div>
+            <div class="orbit-card card-d">
+              <small>Model Accuracy</small>
+              <strong>98.2%</strong>
+              <span>SQL + Power BI</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT SECTION ===================== -->
+      <section class="section-pad about" id="about">
+        <div class="container about-grid">
+          <div class="about-card reveal">
+            <img
+              src="assets/images/profile.svg"
+              alt="Profile placeholder illustration"
+            />
+          </div>
+          <div class="reveal">
+            <p class="eyebrow"><span></span> About Me</p>
+            <h2>James Isaac</h2>
+            <p class="lead">
+              I am a data analyst focused on Excel automation, SQL analysis and
+              Power BI dashboard design. My work combines data cleaning,
+              business logic, storytelling and modern visual design.
+            </p>
+            <div class="skills">
+              <span>Excel</span><span>Power BI</span><span>DAX</span
+              ><span>SQL</span><span>Power Query</span><span>Dashboard UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TOOLBOX SECTION ===================== -->
+      <section class="section-pad toolbox" id="toolbox">
+        <div class="container toolbox-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span></span> Workflow</p>
+            <h2>The Toolbox Trace</h2>
+            <p class="lead">
+              Every insight starts with clean data and ends with a clear story.
+              My workflow connects Excel precision, SQL structure and Power BI
+              storytelling.
+            </p>
+
+            <div class="tool-cards">
+              <article>
+                <span>01</span>
+                <h3>Excel Mastery</h3>
+                <p>
+                  Clean raw files, build logic checks, create pivot models and
+                  prepare data for reporting.
+                </p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>SQL Thinking</h3>
+                <p>
+                  Join tables, create business-ready datasets and validate
+                  numbers before visualization.
+                </p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Power BI Story</h3>
+                <p>
+                  Design executive dashboards with DAX, modern UI layout and
+                  decision-focused KPIs.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="code-window reveal" aria-label="Sample DAX code block">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>// DAX Measure
+YoY Growth % =
+VAR CurrentYear =
+    CALCULATE(
+        [Total Revenue],
+        DATESYTD('Date'[Date])
+    )
+VAR PreviousYear =
+    CALCULATE(
+        [Total Revenue],
+        SAMEPERIODLASTYEAR('Date'[Date])
+    )
+RETURN
+    DIVIDE(
+        CurrentYear - PreviousYear,
+        PreviousYear
+    )</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECT GALLERY ===================== -->
+      <section class="section-pad" id="projects">
+        <div class="container section-head reveal">
+          <p class="eyebrow"><span></span> Selected Work</p>
+          <h2>The Data Lab</h2>
+          <p>
+            Horizontally scroll through projects. Hover each card to reveal
+            business metrics and open the project link in a new tab.
+          </p>
+        </div>
+        <div class="gallery-wrap reveal">
+          <button class="gallery-btn prev" aria-label="Scroll projects left">
+            ‹
+          </button>
+          <div class="project-gallery" id="projectGallery"></div>
+          <button class="gallery-btn next" aria-label="Scroll projects right">
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICES ===================== -->
+      <section class="section-pad services" id="services">
+        <div class="container section-head reveal">
+          <p class="eyebrow"><span></span> Services</p>
+
+          <h2>Let's Build Something</h2>
+
+          <p class="lead">
+            Premium analytics, reporting and dashboard solutions tailored to
+            your business.
+          </p>
+        </div>
+
+        <div class="container services-grid" id="servicesGrid"></div>
+      </section>
+
+      <!-- ===================== TESTIMONIALS ===================== -->
+      <section class="section-pad testimonials" id="testimonials">
+        <div class="container section-head reveal">
+          <p class="eyebrow"><span></span> Social Proof</p>
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="container testimonial-grid reveal">
+          <blockquote>
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+              "The dashboard made our numbers easy to understand and helped us
+              see what was slowing revenue growth."
+            </p>
+
+            <div class="testimonial-author">
+              <h4>Abiola Mariah</h4>
+              <span>Founder, BHMP Network</span>
+            </div>
+          </blockquote>
+          <blockquote>
+            <div class="stars">★★★★</div>
+
+            <p class="testimonial-text">
+              "Clean design, strong analysis and very clear communication from
+              start to finish."
+            </p>
+
+            <div class="testimonial-author">
+              <h4>Mike Harry</h4>
+              <span>Operations Manager</span>
+            </div>
+          </blockquote>
+          <blockquote>
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+              "Our Excel process became faster, cleaner and easier for the whole
+              team to use."
+            </p>
+
+            <div class="testimonial-author">
+              <h4>Elizabeth Jane</h4>
+              <span>Business Owner</span>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT SECTION ===================== -->
+      <section class="section-pad contact" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span></span> Contact</p>
+            <h2>Let’s build something useful with your data.</h2>
+            <p class="lead">
+              Need a dashboard, report automation or a clean portfolio project?
+              Send a message and I will reply.
+            </p>
+            <ul class="contact-list">
+              <li>
+                ✉ <a href="mailto:yourname@email.com">yourname@email.com</a>
+              </li>
+              <li>
+                🔗
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn Profile</a
+                >
+              </li>
+              <li>🌍 Available for remote projects worldwide</li>
+            </ul>
+          </div>
+
+          <!-- CONTACT FORM GUIDE:
+             This form uses FormSubmit. Replace yourname@email.com below with your real email.
+             First submission may ask you to verify your email. After that, messages go to your inbox.
+             Alternative: use Formspree, Netlify Forms or EmailJS.
+        -->
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/yourname@email.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Message"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <label
+              >Name<input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+            /></label>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+            /></label>
+            <label
+              >Message<textarea
+                name="message"
+                rows="6"
+                placeholder="Tell me about your data challenge..."
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              Send Message <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- Left -->
+        <div class="footer-about">
+          <h3>James</h3>
+
+          <p>
+            Turning raw data into clear business decisions through Power BI,
+            Excel, SQL and modern analytics solutions.
+          </p>
+        </div>
+
+        <!-- Center -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Right -->
+        <div class="footer-social">
+          <h4>Connect With Me</h4>
+
+          <div class="social-icons">
+            <!-- Email -->
+            <a href="mailto:jamex361@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 5h16v14H4z" />
+                <path d="M4 7l8 6 8-6" />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/YOUR-LINKEDIN"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V9h4v2" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+
+            <!-- X -->
+            <a href="https://x.com/YOUR_HANDLE" target="_blank" aria-label="X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M18 3L6 21" />
+                <path d="M6 3l12 18" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© <span id="year"></span> James Isaac. All rights reserved.</p>
+
+        <p>Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <!-- ===================== CASE STUDY MODAL ===================== -->
+    <dialog class="modal" id="caseModal">
+      <button class="modal-close" aria-label="Close case study">×</button>
+      <div id="modalContent"></div>
+    </dialog>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
