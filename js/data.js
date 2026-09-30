@@ -1,49 +1,49 @@
 /* =====================================================
    PORTFOLIO DATA FILE
-   Students should customize most content here.
+   Users should customize most content here.
    Add more projects or case studies by copying one object.
    ===================================================== */
 
 const projects = [
   {
-    title: "Revenue Forecasting Engine",
+    title: "Jumia Customer Experience & Loyalty Insights Analysis",
     description:
-      "Unified regional spreadsheets into a real-time Power BI forecasting model with DAX-powered trend analysis.",
-    image: "assets/images/project-revenue.svg",
-    tags: ["Power BI", "DAX", "Excel"],
-    metric: "72h/mo saved",
-    impact: "+18% accuracy",
+      "Analyzed customer experience, operational performance, and customer loyalty patterns using customer feedback and operational data representing Jumia Nigeria. Built an interactive Power BI dashboard to transform raw customer data into actionable Business Intelligence (BI) insights and support data-driven decision-making around customer satisfaction, retention, delivery performance, and complaint resolution.",
+    image: "assets/images/viz jumia dashboard 1.png",
+    tags: ["Power BI", "DAX", "Feature Engineering", "Data Modelling", "Excel"],
+    metric: "+77% Customer Loyalty Recovery",
+    impact: "56% Repeat Customer Rate",
     link: "https://example.com",
   },
   {
-    title: "Inventory Optimization Dashboard",
+    title: "Nigeria-education-analysis",
     description:
-      "Built a demand monitoring system that reduced stock issues across multiple retail locations.",
-    image: "assets/images/project-inventory.svg",
-    tags: ["Excel", "Power BI", "SQL"],
-    metric: "24% less overstock",
-    impact: "80+ branches",
-    link: "https://example.com",
+      "End-to-end data analysis of Nigeria's education crisis using 65 years of World Bank data | DIG Framework | Python | Chart.js.",
+    image: "assets/images/Nigeria_Education_Analysis.jpg",
+    tags: ["Excel", "HTML", "Python"],
+    metric: "$17.6B Annual Education Funding Gap",
+    impact: "90% Collapse in Public Education Investment",
+    link: "https://github.com/Oyinlola-Kayode/Nigeria-education-analysis",
   },
   {
-    title: "Customer Churn Analysis",
+    title: "Pharmacy-Sales-Customer-Insights-Analysis",
     description:
-      "Created cohort analysis that identified churn patterns and monthly attrition drivers.",
-    image: "assets/images/project-churn.svg",
-    tags: ["SQL", "Power BI", "DAX"],
-    metric: "31% churn insight",
-    impact: "5 segments",
-    link: "https://example.com",
-  },
+      "Analyzed pharmacy sales, customers, and product performance to uncover revenue trends, buying behaviour, and product concentration risks, translating the findings into inventory, marketing, and operational recommendations.",
+    image: "assets/images/Customers_overview.jpg",
+    tags: ["Power Query", "DAX", "Power BI", "Data Modelling", "Excel"],
+    metric: "₦5.2M Antibiotic Revenue Concentration",
+    impact: "+17.66% Revenue Decline Exposed",
+    link: "https://github.com/Oyinlola-Kayode/Pharmacy-Sales-Customer-Insights-Analysis",
+ },
   {
     title: "Sales Performance Command Center",
     description:
-      "Designed an executive dashboard tracking revenue, margin and sales team performance.",
-    image: "assets/images/project-sales.svg",
-    tags: ["Power Query", "DAX", "UI UX"],
-    metric: "$2.4M tracked",
-    impact: "+34% clarity",
-    link: "https://example.com",
+      "Analyzed patient visits, doctor performance, treatment patterns, and satisfaction to uncover service-quality trends and support workload, scheduling, and patient-experience decisions.",
+    image: "assets/images/Clinic Visit Trends and Doctors Performance Overview.jpeg",
+    tags: ["Power Query", "VBA", "DAX", "Power Pivot", "Excel"],
+    metric: "4 Patient Segments Profiled",
+    impact: "+34% Service Quality Improvement",
+    link: "https://github.com/Oyinlola-Kayode/Clinic-Visit-Trends-and-Doctors-Performance-Overview",
   },
 ];
 
@@ -57,8 +57,8 @@ const services = [
       <rect x="14" y="14" width="6" height="6"/>
     </svg>
     `,
-    title: "Dashboard Design & Automation",
-    text: "Custom Power BI and Excel dashboards that automate reporting and save hours weekly.",
+    title: "Business Intelligence & Dashboard Solutions",
+    text: "Interactive Power BI and Excel dashboards that bring KPIs, trends, and performance into one clear decision-making view.",
   },
 
   {
@@ -74,8 +74,8 @@ const services = [
       <path d="M16.3 7.7l2.8-2.8"/>
     </svg>
     `,
-    title: "Data Cleaning & Reporting",
-    text: "Transform messy raw data into structured, analysis-ready datasets with clear reporting.",
+    title: "Customer & Marketing Analytics",
+    text: "Analysis that helps businesses understand customer behaviour, engagement, satisfaction, retention, and marketing performance.",
   },
 
   {
@@ -86,8 +86,8 @@ const services = [
       <path d="M20 8h-5"/>
     </svg>
     `,
-    title: "Business Insights & KPI Reporting",
-    text: "Track what matters with actionable KPI frameworks tailored to business goals.",
+    title: "KPI & Performance Analysis",
+    text: "Identifying and tracking the metrics that matter, so teams can see what is improving, what is declining, and where attention is needed.",
   },
 
   {
@@ -98,8 +98,8 @@ const services = [
       <path d="M10 4v16"/>
     </svg>
     `,
-    title: "Spreadsheet Development",
-    text: "Advanced Excel, Power Query and Google Sheets systems built for efficiency.",
+    title: "Data Cleaning, Transformation & Modeling",
+    text: "Turning messy, disconnected data into structured, reliable datasets ready for analysis, reporting, and decision-making.",
   },
 
   {
@@ -112,8 +112,8 @@ const services = [
       <path d="M15 19.4a1.65 1.65 0 0 0 1.82.33"/>
     </svg>
     `,
-    title: "Operational Data Consulting",
-    text: "Improve operations using analytics, workflow optimization and reporting systems.",
+    title: "Operational Reporting & Automation",
+    text: "Building reporting systems that reduce repetitive work, improve visibility, and make day-to-day performance easier to monitor.",
   },
 
   {
@@ -125,7 +125,7 @@ const services = [
       <path d="M4 8v8l8 4l8-4V8"/>
     </svg>
     `,
-    title: "Power BI Coaching & Training",
-    text: "Personalized mentoring from beginner level to advanced dashboard development.",
+    title: "Analytics Training & Mentorship",
+    text: "Practical Excel, SQL, and Power BI training for individuals and teams, using real business problems and hands-on projects.",
   },
 ];
